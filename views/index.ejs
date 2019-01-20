@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+   	   	<title>Youtube Player</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/stylesheets/main.css" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+	<body class="bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="bottom-border">
+            <a class="navbar-brand" href="/">Youtube Player App</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="cont">
+        	<div id="player"></div>
+			<div id="control_cont">
+				<button href="/play" class="btn btn-light" id="play">
+					<span class="fas fa-play"></span>
+				</button>
+				<button class="btn btn-light" id="pause">
+					<span class="fas fa-pause"></span>
+				</button>
+				<div id="line"></div>
+				<div id="square"></div>
+			</div>
+        </div>
+	    <div class="container">
+	    	<div id="search">
+        		<div class="form-group">
+        			<div class="input-group">
+        				<input type="text" class="form-control" placeholder="Video ID: " id="vid_id_input">
+        				<div class="input-group-append">
+        					<button id="search_btn" type="submit" class="btn btn-primary">Search</button>
+        				</div>
+        			</div>				
+        		</div>
+	        </div>		
+	    </div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/main.js"></script>
+	</body>
+</html>
